@@ -1,0 +1,257 @@
+@import './variables.css';
+
+body, 
+input, 
+.boton {
+  font-family: var(--poppins);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: var(--white);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.forms-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.signin-signup {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+form.sign-in-form {
+  z-index: 2;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: var(--brown);
+  margin-bottom: 10px;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: var(--white-low);
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: var(--gray);
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--brown);
+}
+
+.input-field input::placeholder {
+  color: var(--brown-los);
+  font-weight: 500;
+}
+
+.social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: var(--brown);
+  border-radius: 50%;
+  border: 1px solid var(--brown);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.btn-login {
+  display: flex;
+}
+
+.btn {
+  width: 150px;
+  background-color: var(--blue);
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 10px;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-login .boton {
+  margin-left: 10px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+.left-botom {
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: var(--blue-hover);
+}
+
+.btn:active {
+  background-color: var(--blue-hover);
+}
+
+.panels-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: 10%;
+  right: 48%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(-45deg, var(--blue) 0%,  var(--blue) 100%);
+  border-radius: 50%;
+  z-index: 6;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel {
+  pointer-events: none;
+  padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content {
+  color: var(--white);
+}
+
+.panel h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.panel p {
+  font-size: 20px;
+  padding: 0.7rem 0;
+}
+
+.btn.transparent {
+  margin: 0;
+  background: var(--white);
+  color: var(--blue);
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.btn.transparent:hover {
+  background: var(--white-card);
+}
+
+.btn-recuperar-contra {
+  width: 370px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.recuperar_contra {
+  font-family: var(--montserrat);
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 17px;
+  color: black;
+  font-weight: bold;
+}
+
+.recuperar_contra:hover {
+  color: rgb(75, 75, 75);
+}
+
+.btn-volver-login {
+   margin: 20px;
+}
+
+.volver_login {
+  text-align: center;
+}

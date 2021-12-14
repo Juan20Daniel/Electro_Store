@@ -1,0 +1,626 @@
+@import './variables.css';
+
+.cont-admin {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+}
+
+.nemu-admin {
+    background: var(--blue-hover);
+}
+
+.contenido-admin {
+    width: 95%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 20px; 
+}
+
+.contenido-emple {
+    width: 65%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 490px;
+    grid-column-gap: 20px; 
+}
+
+.admin-emple {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) ), url("../img/second_person.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    color: var(--white-gray);
+}
+
+.admin-emple:hover {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6) ), url("../img/second_person.jpg");
+}  
+
+.admin-emple:active {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) ), url("../img/second_person.jpg");
+}   
+
+.add-product {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) ), url("../img/formulario-solicitud-seguro-medico-mano-datos-llenado-paciente_34064-67.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    color: var(--white-gray);
+}
+
+.add-product:hover {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6) ), url("../img/formulario-solicitud-seguro-medico-mano-datos-llenado-paciente_34064-67.jpg");
+}
+
+.add-product:active {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) ), url("../img/formulario-solicitud-seguro-medico-mano-datos-llenado-paciente_34064-67.jpg");
+}
+
+.whatch-pro {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) ), url("../img/cal-visitar-els-clients-pero-com-ho-estem-fent.jpeg");
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    color: var(--white-gray);
+}
+
+.whatch-pro:hover {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6) ), url("../img/cal-visitar-els-clients-pero-com-ho-estem-fent.jpeg");
+}
+
+.whatch-pro:active {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) ), url("../img/cal-visitar-els-clients-pero-com-ho-estem-fent.jpeg");
+}
+
+.admin-emple, .add-product, .whatch-pro {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px var(--gray);
+    border-radius: 10px;
+    height: 490px;
+}
+
+.img-datos-perfil {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    justify-content: center;
+    margin: 20px auto 0px auto;
+}
+
+.img-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    border: 10px solid var(--blue);
+    background: var(--gray);
+    padding: 0px;
+    margin: auto 10px auto auto;
+}
+
+.admin-emples .img-perfil-none {
+    border: none;
+    width: 200px;
+    height: 180px;
+    background: var(--gray);
+    padding: 0px;
+    margin: auto 10px auto auto;
+}
+
+.cont-admin .nemu-admin .img-datos-perfil i {
+    color: #FF3E3E;
+    font-size: 20px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.datos-admin {
+    display: flex;
+    color: var(--blue-low);
+    background: var(--blue);
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid var(--blue-low);
+}
+
+.datos-admin i {
+    font-size: 30px;
+    padding: 0px 10px 0px 0px;
+    color: var(--blue-busca);
+}
+
+.datos-admin input[type="text"], textarea {
+   border: none;
+   outline: none;
+   background: var(--blue);
+   cursor: default;
+   font-size: 25px;
+   font-family: var(--roboto);
+   width: 100%;
+   color: var(--blue-low)
+}
+
+.info-admin {
+    font-size: 25px;
+    font-family: var(--roboto);
+    cursor: default;
+}
+
+.title-card-admin {
+    font-size: 30px;
+    font-family: var(--roboto);
+}
+
+.info-buton-admin {
+    font-size: 25px;
+    color: var(--blue-low);
+    text-decoration: none;
+    font-family: var(--roboto);
+}
+
+.buton-up {
+    background: none;
+    outline: none;
+    border: 0px;
+}
+
+.datos-hover-admin {
+    cursor: pointer;
+}
+
+.datos-hover-admin:hover {
+   background: var(--blue-hover);
+}
+
+.datos-hover-admin:active {
+    background: var(--blue);
+}
+
+.text-info-admin {
+    font-family: var(--roboto);
+    line-height: 30px;
+    color: var(--white);
+    font-size: 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+.empleados-admin {
+    width: 65%;
+    margin: 20px auto;
+}
+
+.admin-emples-title {
+    box-shadow: 0px 0px 3px var(--gray);
+    border-radius: 10px;
+    height: 50px;
+    background: var(--white-card);
+    margin-bottom: 20px;
+}
+
+.datos-empleado-title {
+    padding: 10px 40px;
+    font-family: var(--roboto);
+    color: var(--black);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.admin-emples {
+    box-shadow: 0px 0px 5px var(--gray);
+    border-radius: 10px;
+    height: 180px;
+    background: var(--white-card);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin-bottom: 20px;
+}
+
+.admin-emples img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
+}
+
+.datos-empleado {
+    padding: 10px 40px;
+    font-family: var(--roboto);
+    color: var(--blue-low);
+}
+
+.btn-despedir-emple {
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--blue-busca);
+    font-family: var(--roboto);
+    color: var(--blue-busca);
+    background: var(--white);
+    cursor: pointer;
+}
+
+.btn-despedir-emple:hover { 
+    border-color: var(--blue-low);
+    color: var(--blue-low);
+}
+
+.btn-despedir-emple:active { 
+    border-color: var(--blue-low);
+    color: var(--blue-low);
+}
+
+.select-rol {
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--blue-low);
+    font-family: var(--roboto);
+    color: var(--blue-low);
+    cursor: pointer;
+}
+
+.cont-add-product {
+    margin: 20px auto;
+    width: 600px;   
+}
+
+.add-product-title {
+    width: 100%;
+    height: 50px;
+    background: var(--white-card);
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 5px var(--gray);  
+}
+.add-products-title {
+    padding: 10px 40px;
+    font-family: var(--roboto);
+    color: var(--black);
+    font-size: 25px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.form-add-product {
+    width: 100%;
+    box-shadow: 0px 0px 5px var(--gray);
+    border-radius: 10px;
+    background: var(--white-card);
+}
+
+.form-add-product form .input-item label {
+    display: block;
+    margin-bottom: 2px;
+    font-family: var(--roboto);
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+}
+
+.form-add-product form .input-item {
+    margin-bottom: 20px;
+}
+
+.form-add-product form {
+    padding: 20px;
+}
+
+.form-add-product form .input-item .input-prod {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: 0px;
+    font-family: var(--roboto);
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px var(--gray);
+}
+
+.form-add-product form .input-item .stock {
+    width: 50%;
+}
+
+.form-add-product form .input-item .buton-stock {
+    width: 24%;
+}
+
+.form-add-product form .input-item input[type="text"]:focus {
+    border: 1px solid var(--blue-busca);
+}
+
+.form-add-product form .input-item input[type="number"]:focus {
+    border: 1px solid var(--blue-busca);
+}
+
+.form-add-product form .input-item textarea:focus {
+    border: 1px solid var(--blue-busca);
+}
+
+.input-img {
+    width: 100%;
+    height: 250px;
+    background: var(--gray-low);
+    border-radius: 5px;
+}
+
+.form-add-product form .input-item input[type="file"] {
+    width: 100%;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: 0px;
+    font-family: var(--roboto);
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.input-img {
+    margin-bottom: 25px;
+}
+
+.form-add-product form .input-item input[type="submit"], .btn-atras {
+    border: 1px solid var(--blue-busca);
+    padding: 10px 20px;
+    font-size: 20px;
+    outline: none;
+    background: var(--white-card);
+    border-radius: 5px;
+    color: var(--blue-busca);
+}
+
+.btn-atras {
+    text-decoration: none;
+    color: #E2BB2B;
+    border-color: #E2BB2B;
+    font-family: var(--roboto);
+}
+
+.cont-ver-products {
+    width: 95%;
+    margin: 20px auto;
+}
+
+.add-img-product {
+    font-family: var(--roboto);
+    margin-bottom: 5px;
+}
+
+.verImgSubida {
+    height: 180px;
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    grid-column-gap: 40px;
+    margin: 20px 0px;
+    justify-content: center;
+}
+
+.varImgProduct {
+    width: 100%;
+    height: 180px;
+}
+
+.title-ver-products {
+    background: var(--white-card);
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px var(--gray);
+    padding: 10px 40px;   
+    font-family: var(--roboto);
+    color: var(--black);
+    font-size: 25px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.all-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px 20px;
+}
+
+.card-ver-ptoduct {
+    background: var(--white-card);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px var(--gray);
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+.card-ver-ptoduct:hover {
+   box-shadow: 0px 0px 6px var(--gray);
+}
+
+.cont-ver-products .all-products .card-ver-ptoduct div h1 {
+    font-family: var(--roboto);
+}
+
+.img-ver-product {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-ver-producto {
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--blue-busca);
+    color: var(--blue-busca);
+    font-size: 20px;
+    font-family: var(--roboto);
+    cursor: pointer;
+}
+
+.btn-ver-producto:hover {
+    border-color: var(--blue-low);
+    color: var(--blue-low);
+}
+
+.btn-ver-producto:active {
+    border-color: var(--blue-busca);
+    color: var(--blue-busca);
+}
+
+.container-update {
+    width: 100%;
+}
+
+.title-update {
+    width: 95%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 3px var(--gray);
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.update-input-text {
+    font-family: var(--roboto);
+}
+
+.title-update, .title-update-text {
+    font-size: 25px;
+    font-family: var(--roboto);
+    padding: 5px 40px;
+    font-weight: 600;
+}
+
+.form-update {
+    width: 95%;
+    height: 60vh;
+    margin: 0px auto 20px auto;
+    box-shadow: 0px 0px 3px var(--gray);
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.cont-inputs-update {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+    align-items: center;
+}
+
+
+.input-update-control, label {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.input-update-control {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-update-text {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    font-family: var(--roboto);
+    font-weight: 700;
+    color: var(--brown);
+    background: var(--white-gray);
+    border: 0px;
+    border-radius: 5px;
+}
+
+.contrasena {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-update-contra {
+    width: 88%;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    font-family: var(--roboto);
+    font-weight: 700;
+    color: var(--brown);
+    background: var(--white-gray);
+    border: 0px;
+    border-radius: 5px;
+}
+
+.contra-buton {
+    width: 10%;
+    border: none;
+    background: var(--white-gray);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-update-text:focus {
+    border: 1px solid var(--blue-busca);
+}
+
+.btn-update {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-update-datos {
+    padding: 5px 20px;
+    font-size: 20px;
+    background: none;
+    color: var(--blue-busca);
+    border: 1px solid var(--blue-busca);
+    border-radius: 5px;
+    outline: none;
+}
+
+.file-perfil {
+    width: 90%;
+    border: 0px;
+}
+
+#close {
+    display: none;
+}
+
+.color-select:hover {
+    color: var(--blue-busca);
+    border-color: var(--blue-busca);
+}
+
+.delete-empleado:hover {
+    background: #FF3E3E;
+}

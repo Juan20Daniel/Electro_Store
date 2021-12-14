@@ -1,0 +1,126 @@
+@import './variables.css';
+
+/*Main*/
+.main {
+    width: 100%;
+    margin: 0px auto 0px auto;
+    background: var(--white);
+}
+
+
+.cards {
+    margin: 27px auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.card {
+    width: 100%;
+    box-shadow: 0px 0px 5px var(--gray);
+    display: grid;
+    grid-template-rows: 100px 200px 150px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 11px var(--gray);
+}
+
+.card-produc:hover {
+    box-shadow: 0px 0px 11px var(--gray);
+}
+.card-title {
+    font-family: var(--roboto);
+    width: 100%;
+    margin: auto 0px;
+}
+
+.imgTele {
+    width: 100%;
+    height: 100%;
+}
+
+.card-butom {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background: var(--blue);
+    padding: 10px; 
+    box-sizing: border-box;  
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-butom:hover {
+    background: var(--blue-hover);
+}
+
+.icono {
+    width: 90%;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.main .cards .card .card-butom .icono i {
+    padding: 20px;
+    background: var(--white);
+    border-radius: 50%;
+    color: var(--black);
+}
+ 
+.text-icon {
+    color: var(--white);
+    font-family: var(--roboto);
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    padding: 0px 0px 0px 20px;
+    box-sizing: border-box;
+}   
+
+/*sistema de filtrado*/
+[value="TODOS"]:checked ~ .posts .post[data-category]{
+    display: block;
+}
+
+[value="Televisores"]:checked ~ .posts .post:not([data-category~="Televisores"]),
+[value="Laptops gamers"]:checked ~ .posts .post:not([data-category~="Laptops gamers"]),
+[value="Telefonos"]:checked ~ .posts .post:not([data-category~="Telefonos"]),
+[value="Relojs"]:checked ~ .posts .post:not([data-category~="Relojs"]),
+[value="Audífonos"]:checked ~ .posts .post:not([data-category~="Audífonos"]){
+    display: none;
+}
+    
+[value="TODOS"]:checked ~ .container-category [for="TODOS"],
+[value="Televisores"]:checked ~ .container-category [for="Televisores"],
+[value="Crear cuenta"]:checked ~ .container-category [for="Telefonos"],
+[value="Telefonos"]:checked ~ .container-category [for="Telefonos"],
+[value="Relojs"]:checked ~ .container-category [for="Relojs"],
+[value="Audífonos"]:checked ~ .container-category [for="Audífonos"]{
+    background: var(--blue-busca);
+    color: var(--white);
+}
+
+@media screen and (max-width: 1200px){
+    .posts{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .posts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 580px){
+    .posts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
